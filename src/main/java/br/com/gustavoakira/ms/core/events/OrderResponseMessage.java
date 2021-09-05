@@ -2,11 +2,11 @@ package br.com.gustavoakira.ms.core.events;
 
 import java.util.UUID;
 
-public class OrderEventResponse {
+public class OrderResponseMessage {
     private UUID orderId;
     private boolean success;
 
-    public OrderEventResponse(UUID orderId, boolean success) {
+    public OrderResponseMessage(UUID orderId, boolean success) {
         this.orderId = orderId;
         this.success = success;
     }

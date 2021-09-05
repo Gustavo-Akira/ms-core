@@ -3,11 +3,11 @@ package br.com.gustavoakira.ms.core.events;
 import java.util.Map;
 import java.util.UUID;
 
-public class OrderEvent {
+public class OrderMessage {
     private Map<UUID, Integer> products;
     private UUID orderId;
 
-    public OrderEvent(Map<UUID, Integer> products, UUID orderId) {
+    public OrderMessage(Map<UUID, Integer> products, UUID orderId) {
         this.products = products;
         this.orderId = orderId;
     }
