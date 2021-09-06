@@ -7,6 +7,10 @@ public class OrderMessage {
     private Map<UUID, Integer> products;
     private UUID orderId;
 
+    public OrderMessage(){
+
+    }
+
     public OrderMessage(Map<UUID, Integer> products, UUID orderId) {
         this.products = products;
         this.orderId = orderId;

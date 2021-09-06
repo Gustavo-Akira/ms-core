@@ -6,6 +6,10 @@ public class OrderResponseMessage {
     private UUID orderId;
     private boolean success;
 
+    public OrderResponseMessage(){
+
+    }
+
     public OrderResponseMessage(UUID orderId, boolean success) {
         this.orderId = orderId;
         this.success = success;
