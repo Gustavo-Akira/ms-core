@@ -34,7 +34,7 @@ public class OrderMessage {
 
     @Override
     public String toString() {
-        return "OrderEvent{" +
+        return "OrderMessage{" +
                 "products=" + products +
                 ", orderId=" + orderId +
                 '}';

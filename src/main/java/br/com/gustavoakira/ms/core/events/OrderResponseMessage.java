@@ -33,7 +33,7 @@ public class OrderResponseMessage {
 
     @Override
     public String toString() {
-        return "OrderEventResponse{" +
+        return "OrderMessageResponse{" +
                 "orderId=" + orderId +
                 ", success=" + success +
                 '}';
