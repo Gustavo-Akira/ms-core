@@ -1,12 +1,28 @@
 package br.com.gustavoakira.ms.core.events;
 
+import java.util.UUID;
+
 public class AuthenticationRegistrationMessage {
     private String username;
     private String password;
+    private UUID userId;
 
-    public AuthenticationRegistrationMessage(String username, String password) {
+    public AuthenticationRegistrationMessage() {
+
+    }
+
+    public AuthenticationRegistrationMessage(String username, String password, UUID userId) {
         this.username = username;
         this.password = password;
+        this.userId = userId;
+    }
+
+    public UUID getUserId() {
+        return userId;
+    }
+
+    public void setUserId(UUID userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
